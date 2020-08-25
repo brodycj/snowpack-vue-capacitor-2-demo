@@ -4,6 +4,11 @@
 
 ## Capacitor mobile development
 
+**Supported mobile platforms:**
+
+- Android 8.1(+) (Android 7.0 support is possible with help from `shimport`)
+- iOS - tested on iOS 13
+
 To install:
 
 - `npm install`
@@ -17,16 +22,29 @@ Build:
 - `npm run build`
 - `npx cap copy`
 
+To run on Android:
+
+- `npx cap open android`
+- build and run from Android Studio
+
 run on iOS:
 
 - `npx cap open ios` to open iOS project in Xcode
 - buid and run from Xcode
 
+### Workarounds applied for Android
+
+- use `mount` option in `snowpack.config.json` due to an issue with directory starting with underscore
+- remove HMR code to avoid issue with `import.meta`
+
+### Major TODO items
+
+- Hot reload functionality
+
 ### recommended reading
 
 - https://capacitorjs.com/docs/getting-started
 - https://capacitorjs.com/docs/basics/workflow
-
 
 ## Available Scripts
 
