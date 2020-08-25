@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "snowpack dev",
-    "build": "snowpack build",
+    "build": "snowpack build && npm run patch-build",
+    "patch-build": "sh scripts/patch-build.sh",
     "test": "echo \"Vue 3.0 test support is still in progress.\" && exit 1"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@snowpack/app-scripts-vue": "^1.8.4",
+    "replace": "^1.2.0",
     "snowpack": "^2.9.0"
   }
 }
