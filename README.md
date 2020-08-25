@@ -34,6 +34,7 @@ run on iOS:
 
 ### Workarounds applied for Android
 
+- include a quick workaround to replace `??` operator in `build/web_modules/vue.js`
 - use `mount` option in `snowpack.config.json` due to an issue with directory starting with underscore
 - remove HMR code to avoid issue with `import.meta`
 
