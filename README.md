@@ -2,6 +2,32 @@
 
 > ✨ Bootstrapped with Create Snowpack App (CSA) using `@snowpack/vue-template` template.
 
+## Capacitor mobile development
+
+To install:
+
+- `npm install`
+
+needed for iOS only:
+
+- `(cd ios/App && pod install)`
+
+Build:
+
+- `npm run build`
+- `npx cap copy`
+
+run on iOS:
+
+- `npx cap open ios` to open iOS project in Xcode
+- buid and run from Xcode
+
+### recommended reading
+
+- https://capacitorjs.com/docs/getting-started
+- https://capacitorjs.com/docs/basics/workflow
+
+
 ## Available Scripts
 
 ### npm start
