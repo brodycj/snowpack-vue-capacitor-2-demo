@@ -1,4 +1,7 @@
 {
+  "name": "snowpack-vue-capacitor-demo",
+  "license": "MIT",
+  "private": true,
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
