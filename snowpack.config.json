@@ -1,4 +1,7 @@
 {
   "extends": "@snowpack/app-scripts-vue",
+  "mount": {
+    "src": "/dist"
+  },
   "plugins": []
 }
