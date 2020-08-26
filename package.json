@@ -13,7 +13,7 @@
     "@capacitor/cli": "^2.4.0",
     "@capacitor/core": "^2.4.0",
     "@capacitor/ios": "2.4.0",
-    "vue": "^3.0.0-rc.8"
+    "vue": "^3.0.0-rc.9"
   },
   "devDependencies": {
     "@snowpack/app-scripts-vue": "^1.8.4",
