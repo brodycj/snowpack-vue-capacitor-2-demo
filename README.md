@@ -1,4 +1,4 @@
-# snowpack-vue-capacitor-demo
+# snowpack-vue-capacitor-2-demo
 
 > ✨ Bootstrapped with Create Snowpack App (CSA) using `@snowpack/vue-template` template.
 
