@@ -9,12 +9,13 @@
 - Android 8.1(+) (Android 7.0 support is possible with help from `shimport`)
 - iOS - tested on iOS 13
 
-To install:
+To install and build:
 
 - `npm install`
+- `npm run build`
 - `npx cap update`
 
-Build:
+To rebuild:
 
 - `npm run build`
 - `npx cap copy`
