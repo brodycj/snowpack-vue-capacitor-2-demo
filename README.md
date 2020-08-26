@@ -11,15 +11,17 @@ context in: [snowpack discussion #905](https://github.com/pikapkg/snowpack/discu
 - Android 8.1(+) (Android 7.0 support is possible with help from `shimport`)
 - iOS - tested on iOS 13
 
+Note: This project is now developed using Yarn, which is highly recommended. Using `npm` is no longer tested and may or may not continue to work.
+
 To install and build:
 
-- `npm install`
-- `npm run build`
+- `yarn`
+- `yarn build`
 - `npx cap update`
 
 To rebuild:
 
-- `npm run build`
+- `yarn build`
 - `npx cap copy`
 
 To run on Android:
@@ -61,7 +63,7 @@ You will also see any lint errors in the console.
 
 **⚠️ NOTE:** Vue 3 testing support is still in progress. This template does not ship with a test runner.
 
-### npm run build
+### yarn build
 
 Builds the app for production to the `build/` folder.
 It correctly bundles Vue in production mode and optimizes the build for the best performance.

@@ -2,7 +2,7 @@
   "appId": "com.example.app",
   "appName": "snowpack-vue-capacitor-2-demo",
   "bundledWebRuntime": false,
-  "npmClient": "npm",
+  "npmClient": "yarn",
   "webDir": "build",
   "plugins": {
     "SplashScreen": {
