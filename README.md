@@ -2,6 +2,8 @@
 
 > ✨ Bootstrapped with Create Snowpack App (CSA) using `@snowpack/vue-template` template.
 
+context in: [snowpack discussion #905](https://github.com/pikapkg/snowpack/discussions/905)
+
 ## Capacitor mobile development
 
 **Supported mobile platforms:**
