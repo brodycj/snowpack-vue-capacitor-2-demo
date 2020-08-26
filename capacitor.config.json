@@ -1,6 +1,6 @@
 {
   "appId": "com.example.app",
-  "appName": "snowpack-vue-capacitor-demo",
+  "appName": "snowpack-vue-capacitor-2-demo",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",
