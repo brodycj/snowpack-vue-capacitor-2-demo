@@ -1,4 +1,4 @@
-# Quick hack to run on Android
+# Quick hack to run on Android - only needed with buildOptions.minify enabled (or removed)
 # (as a separate script due to issues with JSON)
 # TBD not so well tested at this point
 # ref:

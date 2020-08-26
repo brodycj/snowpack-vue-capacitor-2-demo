@@ -32,8 +32,7 @@ run on iOS:
 
 ### Workarounds applied for Android
 
-- quick hack to replace `??` operator with `||` in `build/web_modules/vue.js`
-- use `mount` option in `snowpack.config.json` due to issue with directory starting with underscore, by default build configuration ref: https://github.com/ionic-team/capacitor/issues/1750
+- options in `snowpack.config.json` to avoid build directories starting with underscore, due to this: https://github.com/ionic-team/capacitor/issues/1750
 - remove HMR code from `src/index.js`, as needed to avoid a parse issue on Android 8.1
 
 ### Major TODO items
