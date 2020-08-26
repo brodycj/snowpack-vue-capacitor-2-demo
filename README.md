@@ -12,10 +12,7 @@
 To install:
 
 - `npm install`
-
-needed for iOS only:
-
-- `(cd ios/App && pod install)`
+- `npx cap update`
 
 Build:
 
@@ -34,13 +31,14 @@ run on iOS:
 
 ### Workarounds applied for Android
 
-- include a quick workaround to replace `??` operator in `build/web_modules/vue.js`
-- use `mount` option in `snowpack.config.json` due to an issue with directory starting with underscore
-- remove HMR code to avoid issue with `import.meta`
+- quick hack to replace `??` operator with `||` in `build/web_modules/vue.js`
+- use `mount` option in `snowpack.config.json` due to issue with directory starting with underscore, by default build configuration ref: https://github.com/ionic-team/capacitor/issues/1750
+- remove HMR code from `src/index.js`, as needed to avoid a parse issue on Android 8.1
 
 ### Major TODO items
 
-- Hot reload functionality
+- Hot reload functionality not working with Capacitor build
+- Document how to update Capacitor version (this would likely involve deleting and regenerating the `android` and `ios` directory trees)
 
 ### recommended reading
 
