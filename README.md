@@ -6,30 +6,37 @@ context in: [snowpack discussion #905](https://github.com/pikapkg/snowpack/discu
 
 ## Capacitor mobile development
 
-**Supported mobile platforms:**
+### Supported mobile platforms
 
 - Android 8.1(+) (Android 7.0 support is possible with help from `shimport`)
 - iOS - tested on iOS 13
 
-Note: This project is now developed using Yarn, which is highly recommended. Using `npm` is no longer tested and may or may not continue to work.
+### Requirements
 
-To install and build:
+- macOS (not tested on Windows, Linux, etc.)
+- Xcode to build and run on iOS
+- Android Studio to build and run on Android
+- Yarn (this project is no longer tested with `npm`)
+
+### Build and run
+
+**To install and build:**
 
 - `yarn`
 - `yarn build`
 - `npx cap update`
 
-To rebuild:
+**To rebuild:**
 
 - `yarn build`
 - `npx cap copy`
 
-To run on Android:
+**To run on Android:**
 
 - `npx cap open android`
 - build and run from Android Studio
 
-run on iOS:
+**To run on iOS:**
 
 - `npx cap open ios` to open iOS project in Xcode
 - buid and run from Xcode
@@ -51,7 +58,7 @@ run on iOS:
 
 ## Available Scripts
 
-### npm start
+### yarn start
 
 Runs the app in the development mode.
 Open http://localhost:8080 to view it in the browser.
@@ -59,7 +66,7 @@ Open http://localhost:8080 to view it in the browser.
 The page will reload if you make edits.
 You will also see any lint errors in the console.
 
-### npm test
+### yarn test
 
 **⚠️ NOTE:** Vue 3 testing support is still in progress. This template does not ship with a test runner.
 
