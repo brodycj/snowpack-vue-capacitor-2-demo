@@ -3,8 +3,7 @@
     <header class="App-header">
       <img src="/logo.svg" class="App-logo" alt="logo" />
       <p>
-        Edit
-        <code>src/App.vue</code> and save to reload.
+        update 02
       </p>
       <a
         class="App-link"
