@@ -5,6 +5,7 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
+    "build-hmr": "snowpack build && cp node_modules/snowpack/assets/hmr.js build/dist",
     "patch-build": "sh scripts/patch-build.sh",
     "test": "echo \"Vue 3.0 test support is still in progress.\" && exit 1",
     "copy": "cap copy",
