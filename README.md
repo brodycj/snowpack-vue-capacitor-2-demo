@@ -46,9 +46,58 @@ context in: [snowpack discussion #905](https://github.com/pikapkg/snowpack/discu
 - options in `snowpack.config.json` to avoid build directories starting with underscore, due to this: https://github.com/ionic-team/capacitor/issues/1750
 - remove HMR code from `src/index.js`, as needed to avoid a parse issue on Android 8.1
 
+### Hot reload
+
+HMR is supported with special `public-hmr/index.html` file and special `build-hmr` package script.
+
+#### Easy HMR - iOS only
+
+Configure local server URL in `capacitor.config.json`, like this for example:
+
+```diff
+diff --git a/capacitor.config.json b/capacitor.config.json
+index 246a1c2..14b8095 100644
+--- a/capacitor.config.json
++++ b/capacitor.config.json
+@@ -9,5 +9,8 @@
+       "launchShowDuration": 0
+     }
+   },
++  "server": {
++    "url": "http://0.0.0.0:8080"
++  },
+   "cordova": {}
+ }
+```
+
+Build with HMR and copy: `yarn build-hmr && yarn copy`
+
+Start the `dev` server in a spare terminal: `yarn start`
+
+Open and run on iOS as documented above, then try editing `src/App.vue`.
+
+#### HMR with Android support
+
+Minimum Android version is 9.0.
+
+Start the `dev` server in a spare terminal: `yarn start`
+
+Configure `server` with specific URL from `yarn start` and `"cleartext": true` in `capacitor.config.json`, like this for example:
+
+```json
+  "server": {
+    "url": "http://100.76.100.120:8080",
+    "cleartext": true
+  },
+```
+
+Build with HMR and copy: `yarn build-hmr && yarn copy`
+
+Open and run on Android and iOS as documented above, then try editing `src/App.vue`.
+
 ### Major TODO items
 
-- Hot reload functionality not working with Capacitor build
+- Improve and automate HMR functionality
 - Document how to update Capacitor version (this would likely involve deleting and regenerating the `android` and `ios` directory trees)
 
 ### recommended reading
