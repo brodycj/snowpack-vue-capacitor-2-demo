@@ -10,7 +10,8 @@
     }
   },
   "server": {
-    "url": "http://127.0.0.1:8080"
+    "url": "http://100.76.100.120:8100",
+    "cleartext": true
   },
   "cordova": {}
 }
