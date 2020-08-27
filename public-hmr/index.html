@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snowpack App with HMR</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/dist/index.js"></script>
+    <script type="module">
+      import * as HMR from '/dist/hmr.js';
+      import.meta.hot = HMR.createHotContext('/dist/index.js');
+    </script>
+  </body>
+</html>
