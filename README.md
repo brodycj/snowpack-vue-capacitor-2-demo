@@ -24,21 +24,21 @@ context in: [snowpack discussion #905](https://github.com/pikapkg/snowpack/discu
 
 - `yarn`
 - `yarn build`
-- `npx cap update`
+- `yarn update` (same as `npx cap update`)
 
 **To rebuild:**
 
 - `yarn build`
-- `npx cap copy`
+- `yarn copy` (same as `npx cap copy`)
 
 **To run on Android:**
 
-- `npx cap open android`
+- `yarn open android` (same as `npx cap open android`) to open in Android Studio
 - build and run from Android Studio
 
 **To run on iOS:**
 
-- `npx cap open ios` to open iOS project in Xcode
+- `yarn open ios` (same as `npx cap open ios`) to open iOS project in Xcode
 - buid and run from Xcode
 
 ### Workarounds applied for Android
@@ -74,6 +74,18 @@ You will also see any lint errors in the console.
 
 Builds the app for production to the `build/` folder.
 It correctly bundles Vue in production mode and optimizes the build for the best performance.
+
+### yarn copy
+
+Same as `npx cap copy` - copy build and configuration to Android and iOS platforms
+
+### yarn open
+
+Same `npx cap open` - use `android` or `ios` argument to choose which platform top open in the IDE
+
+### yarn update
+
+Same as `npx cap update` - do `pod install` for iOS, install dynamic dependencies for Android, copy build, and copy configuration
 
 ### Q: What about Eject?
 
