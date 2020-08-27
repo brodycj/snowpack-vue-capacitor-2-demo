@@ -21,5 +21,13 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="module">
+// import * as  __SNOWPACK_HMR__ from '/dist/h3.js';
+import * as  __SNOWPACK_HMR__ from '/dist/hmr.js';
+
+console.log('xxx', 'xxx 1')
+
+import.meta.hot = __SNOWPACK_HMR__.createHotContext('/dist/index.js');
+    </script>
   </body>
 </html>
